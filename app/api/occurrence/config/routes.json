@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/occurrences",
+      "handler": "occurrence.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/occurrences/count",
+      "handler": "occurrence.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/occurrences/:id",
+      "handler": "occurrence.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/occurrences",
+      "handler": "occurrence.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/occurrences/:id",
+      "handler": "occurrence.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/occurrences/:id",
+      "handler": "occurrence.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

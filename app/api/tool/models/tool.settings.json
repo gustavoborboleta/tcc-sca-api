@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tools",
+  "info": {
+    "name": "Tool",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "tool_maintenance": {
+      "model": "tool-maintenance",
+      "via": "tool"
+    }
+  }
+}

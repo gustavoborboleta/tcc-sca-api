@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "occurrences",
+  "info": {
+    "name": "Occurrence",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "Lower",
+        "Medium",
+        "High"
+      ]
+    },
+    "shift": {
+      "model": "shift",
+      "via": "occurrences"
+    },
+    "sector": {
+      "model": "sector",
+      "via": "occurrences"
+    },
+    "mine": {
+      "model": "mine",
+      "via": "occurrences"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

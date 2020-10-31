@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sectors",
+  "info": {
+    "name": "Sector"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "mine": {
+      "via": "sectors",
+      "model": "mine"
+    },
+    "shifts": {
+      "via": "sectors",
+      "collection": "shift"
+    },
+    "occurrences": {
+      "via": "sector",
+      "collection": "occurrence"
+    },
+    "monitorings": {
+      "via": "sector",
+      "collection": "monitoring"
+    }
+  }
+}

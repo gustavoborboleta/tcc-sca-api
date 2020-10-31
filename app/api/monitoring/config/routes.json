@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/monitorings",
+      "handler": "monitoring.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monitorings/count",
+      "handler": "monitoring.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monitorings/:id",
+      "handler": "monitoring.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/monitorings",
+      "handler": "monitoring.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/monitorings/:id",
+      "handler": "monitoring.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/monitorings/:id",
+      "handler": "monitoring.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

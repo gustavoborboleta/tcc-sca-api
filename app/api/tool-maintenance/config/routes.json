@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tool-maintenances",
+      "handler": "tool-maintenance.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tool-maintenances/count",
+      "handler": "tool-maintenance.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tool-maintenances/:id",
+      "handler": "tool-maintenance.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tool-maintenances",
+      "handler": "tool-maintenance.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tool-maintenances/:id",
+      "handler": "tool-maintenance.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tool-maintenances/:id",
+      "handler": "tool-maintenance.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mines",
+  "info": {
+    "name": "Mine",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "sectors": {
+      "collection": "sector",
+      "via": "mine"
+    },
+    "activities": {
+      "via": "mine",
+      "collection": "activity"
+    },
+    "occurrences": {
+      "via": "mine",
+      "collection": "occurrence"
+    },
+    "monitorings": {
+      "via": "mine",
+      "collection": "monitoring"
+    }
+  }
+}

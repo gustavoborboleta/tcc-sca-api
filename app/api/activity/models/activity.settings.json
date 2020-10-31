@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activities",
+  "info": {
+    "name": "Activity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "sector": {
+      "model": "sector"
+    },
+    "mine": {
+      "model": "mine",
+      "via": "activities"
+    },
+    "shift": {
+      "model": "shift",
+      "via": "activities"
+    }
+  }
+}

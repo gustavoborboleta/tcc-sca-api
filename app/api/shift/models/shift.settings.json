@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shifts",
+  "info": {
+    "name": "Shift",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "enumeration",
+      "enum": [
+        "Matutino",
+        "Vespertino",
+        "Noite",
+        "Madrugada"
+      ],
+      "unique": true,
+      "required": true
+    },
+    "sectors": {
+      "collection": "sector",
+      "via": "shifts",
+      "dominant": true
+    },
+    "activities": {
+      "via": "shift",
+      "collection": "activity"
+    },
+    "occurrences": {
+      "via": "shift",
+      "collection": "occurrence"
+    }
+  }
+}

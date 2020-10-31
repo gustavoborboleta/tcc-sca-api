@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tool_maintenances",
+  "info": {
+    "name": "Tool Maintenance",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "tool": {
+      "via": "tool_maintenance",
+      "model": "tool"
+    }
+  }
+}

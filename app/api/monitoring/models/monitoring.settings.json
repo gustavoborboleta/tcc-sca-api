@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monitorings",
+  "info": {
+    "name": "Monitoring",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "humidity": {
+      "type": "integer",
+      "required": true
+    },
+    "pressure": {
+      "type": "integer",
+      "required": true
+    },
+    "sector": {
+      "model": "sector",
+      "via": "monitorings"
+    },
+    "mine": {
+      "model": "mine",
+      "via": "monitorings"
+    },
+    "Date": {
+      "type": "datetime",
+      "required": true
+    },
+    "details": {
+      "type": "json"
+    }
+  }
+}
