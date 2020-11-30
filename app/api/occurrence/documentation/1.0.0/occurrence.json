@@ -531,14 +531,6 @@
           "description": {
             "type": "string"
           },
-          "level": {
-            "type": "string",
-            "enum": [
-              "Lower",
-              "Medium",
-              "High"
-            ]
-          },
           "shift": {
             "required": [
               "id",
@@ -693,14 +685,6 @@
           },
           "description": {
             "type": "string"
-          },
-          "level": {
-            "type": "string",
-            "enum": [
-              "Lower",
-              "Medium",
-              "High"
-            ]
           },
           "shift": {
             "type": "string"

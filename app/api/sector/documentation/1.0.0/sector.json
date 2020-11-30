@@ -636,9 +636,6 @@
                 "description": {
                   "type": "string"
                 },
-                "level": {
-                  "type": "string"
-                },
                 "shift": {
                   "type": "string"
                 },

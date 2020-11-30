@@ -19,14 +19,6 @@
       "type": "text",
       "required": true
     },
-    "level": {
-      "type": "enumeration",
-      "enum": [
-        "Lower",
-        "Medium",
-        "High"
-      ]
-    },
     "shift": {
       "model": "shift",
       "via": "occurrences"
